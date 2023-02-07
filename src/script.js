@@ -12,9 +12,9 @@ const divUpdate = document.getElementById("exchange-rate-update");
  fetch("https://v6.exchangerate-api.com/v6/1e4be685bced6be0ff04f5fc/latest/GBP")
  .then(response => response.json())
  .then(data => {
-    divUSD.innerHTML = `1 GBP = ${data.conversion_rates.USD} USD`;
-    divEUR.innerHTML = `1 GBP = ${data.conversion_rates.EUR} EUR`;
-    divJPY.innerHTML = `1 GBP = ${data.conversion_rates.JPY} JPY`;
+    divUSD.innerHTML = `1 GBP (£) = ${data.conversion_rates.USD} USD`;
+    divEUR.innerHTML = `1 GBP (£) = ${data.conversion_rates.EUR} EUR`;
+    divJPY.innerHTML = `1 GBP (£) = ${data.conversion_rates.JPY} JPY`;
     divUpdate.innerHTML = `Rates last updated: ${data.time_last_update_utc}`;
     
  })
