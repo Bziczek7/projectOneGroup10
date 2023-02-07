@@ -47,12 +47,12 @@ body {
 
 .contact-title {
     text-align: center;
-    margin-top: 100px;
+    margin-top: 50px;
     
 }
 
 .contact-me {
-        background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.5) 75%, #000000 100%);
+        
     background-position: center;
     background-color:#4b859b;
     background-repeat: no-repeat;
@@ -68,7 +68,7 @@ body {
     margin-left: 650px;
     margin-right: 650px;
     margin-top: 50px;
-  
+  margin-bottom: 50px;
     text-align: center;
   
   }
