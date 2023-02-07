@@ -1,6 +1,6 @@
 # Bootcamp Project 1
 
-First Bootcamp project for Group 10:
+First Bootcamp (UK-VIRT-FE-PT-11-2022-U-LOLC-TWTH-2) project for Group 10:
 
 - Pawel Bzinkowski
 - Milena Tessari Zanqui
@@ -8,8 +8,12 @@ First Bootcamp project for Group 10:
 
 The requirement of the project is to conceive and execute a website design that solves a real-world problem by integrating data received from multiple server-side API requests.
 
+Our user story is for a UK-based traveller to have a resource to find the latest exchange rates, convert currencies and identify any stocks and shares news that may impact their finances.
+
+We therefore identified 2 APIs (see Credits section) from which the user can request relevant data and have it presented on the page in a useful and clear way (see Usage section).git
+
 The website has to meet the following requirements:
-Use Bootstrap.
+- Use Bootstrap.
 
 - Be deployed to GitHub Pages.
 
@@ -31,26 +35,33 @@ Use Bootstrap.
 
 ## Installation
 
-URL: https://github.com/42-djc/Password-Generator-Module-5-Assignment
+URL: https://github.com/Bziczek7/projectOneGroup10
 
 ## Usage
 
-Page comprised of:
+Page comprised of 4 main sections:
 
-Button with click event listener to initiate functions to:
-1. confirm users requirements for password length and desired character types
-2. concatenate the character arrays based on user input into a single array
-3. generate a password based on random values from the single array
-4. displaying the password on the site
-
+1. Navigation bar linking to main sections of the site.
+2. A "Popular Currencies" section for UK travellers showing 3 exchange rates of 3 common currencies against a base GBP rate - this pulls from an API which refreshes daily.
+3. A "Currency Conversion" section which allows users to input a base currency, an amount and will return the amount of currency they wish to convert to.  This uses an event listener and an API.
+4. A news section for top news stories which fetches the top 3 financial news stories from an API.
 
 See screenshot below:
 
-![My Image](./screenshot.png)
+![My Image](../images/screenshot.png)
 
 ## Credits
 
-n/a
+Collaborators:
+
+- Pawel Bzinkowski (https://github.com/Bziczek7)
+- Milena Tessari Zanqui (https://github.com/mitessari)
+- Daniel Colman (https://github.com/42-djc)
+
+APIs:
+
+- https://www.exchangerate-api.com/
+- https://www.marketaux.com/
 
 ## Licenses
 
