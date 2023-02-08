@@ -7,25 +7,48 @@ const divUpdate = document.getElementById("exchange-rate-update");
 //   .then(response => response.json())
 //   .then(data => console.log(data)
 //  );
+
+const newsList = document.querySelector('.latestNews');
 function currencyNews() {
   apiKey= `0bS7mxa8qAVf78u0k10ZwEnILvZ4AJelAtGiOzCl`;
 
   fetch(`https://api.marketaux.com/v1/news/all?symbols=TSLA%2CAMZN%2CMSFT&filter_entities=true&language=en&api_token=${apiKey}`)
-  .then(response => response.json())
-  .then(data => {
-    console.log(data)
+.then((response) => {
+  return response.json()
+}).then((data) =>{
+  console.log(data)
+  data.data.forEach(data =>{
+    let li= document.createElement('li');
+    let a = document.createElement('a');
+    a.setAttribute('href', data.url);
+    a.setAttribute('target', '_blank');
+    a.textContent = data.title;
+    li.appendChild(a);
+    newsList.appendChild(li);
 
-  let latestNews = data.data;
-
-  var NewsDiv = $("<div>");
-  var title = $("<h3>");
-  title.addClass("title");
-  title.text((`${latestNews[0].title}`))
-  $(NewsDiv).append(title);
-  $("#latestNews").append(NewsDiv); 
-  console.log(latestNews);
-})
+  })
+  });
 }
+
+
+
+
+
+  //   .then(response => response.json())
+//   .then(data => {
+//     console.log(data)
+
+//   let latestNews = data.data;
+
+//   var NewsDiv = $("<div>");
+//   var title = $("<h3>");
+//   title.addClass("title");
+//   title.text((`${latestNews[0].title}`));
+//   $(NewsDiv).append(title);
+//   $("#latestNews").append(NewsDiv); 
+//   console.log(latestNews);
+// })
+
 
 
 
