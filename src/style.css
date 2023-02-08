@@ -1,18 +1,23 @@
+
 body {
     background-color: #4b859b !important;
 }
+
 
 
  .navbar-nav, .nav-link {
     color: white !important ;
   min-width: 300px; 
  display: flex;
+
  text-align: center;
  
+
 
  
  
 } 
+
 
 .navbar {
     padding-bottom: 0px !important;
@@ -23,6 +28,7 @@ body {
     text-decoration: underline;
     text-underline-offset: 5px;
 }
+
 
 
 
@@ -41,6 +47,7 @@ body {
 }
 
 .container-fluid {
+
     background-color: #3e3f3a;
     
 } 
@@ -81,3 +88,5 @@ footer {
    background-color: #3e3f3a;
    color: white;
   }
+
+
