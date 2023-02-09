@@ -47,9 +47,42 @@ function currencyNews() {
 }
   currencyNews()
 
-// for (let i = 0; i < latestNews.length; i++) {
-//   }
+// Contact us section
 
+
+var signUpButton = document.querySelector("#submitButton");
+
+var msgDiv = document.querySelector("#msg");
+
+function renderRegister () {
+  function displayMessage(type, message) {
+    msgDiv.textContent = message;
+    msgDiv.setAttribute("class", type);
+  }
+signUpButton.addEventListener("click", function(event) {
+  event.preventDefault();
+var email = document.querySelector("#email");
+console.log(email);
+var firstName = document.querySelector("#fname");
+var lastName = document.querySelector("#lname");
+var subject = document.querySelector("#subject");
+  if (email.value === "") {
+    displayMessage("error", "Email cannot be blank");
+  } else if (firstName.value === "") {
+    displayMessage("error", "First Name cannot be blank");
+  } else if (lastName.value === "") {
+    displayMessage("error", "Last Name cannot be blank");
+  } else {
+    displayMessage("success", "Registered successfully");
+  }
+ email.value = "";
+ firstName.value = "";
+ lastName.value = "";
+ subject.value = "";
+ 
+})
+}
+renderRegister();
 
 
 
