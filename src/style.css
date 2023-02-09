@@ -29,13 +29,29 @@ body {
     text-underline-offset: 5px;
 }
 
+/* Popular Currency section */
 
+#popularCurrency .card {
+    background-color: lightblue;
+    border: 10px solid #3e3f3a;
+}
 
+#popularCurrency .card-img-top {
+    padding: 20px;
+}
 
+#popularCurrency {
+    background-color: white;
+    border: 10px solid #3e3f3a;
+    padding-bottom: 20px;
+    margin-top: 30px;
+}
 
-
-
-  
+#popularCurrency .card:hover .card-img-top {
+    transform: scale(1.2);
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
 
 
 

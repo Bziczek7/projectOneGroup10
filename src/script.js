@@ -3,40 +3,11 @@ const divEUR = document.getElementById("exchange-rate-eur");
 const divJPY = document.getElementById("exchange-rate-jpy");
 const divUpdate = document.getElementById("exchange-rate-update");
 
-// fetch(`https://api.currencyfreaks.com/latest?apikey=3fb12eb653094ca69e6b7dd7c06b890a&symbols=USD,EUR,JPY&base=GBP`)
-//   .then(response => response.json())
-//   .then(data => console.log(data)
-//  );
-function currencyNews() {
-  apiKey= `0bS7mxa8qAVf78u0k10ZwEnILvZ4AJelAtGiOzCl`;
-
-  fetch(`https://api.marketaux.com/v1/news/all?symbols=TSLA%2CAMZN%2CMSFT&filter_entities=true&language=en&api_token=${apiKey}`)
-  .then(response => response.json())
-  .then(data => {
-    console.log(data)
-
-  let latestNews = data.data;
-
-  var NewsDiv = $("<div>");
-  var title = $("<h3>");
-  title.addClass("title");
-  title.text((`${latestNews[0].title}`))
-  $(NewsDiv).append(title);
-  $("#latestNews").append(NewsDiv); 
-  console.log(latestNews);
-})
-}
-
-
-
-  currencyNews()
-
-// for (let i = 0; i < latestNews.length; i++) {
-//   }
-
-
-
-
+//fetch("https://api.currencyfreaks.com/latest?apikey=3fb12eb653094ca69e6b7dd7c06b890a&symbols=USD,EUR,JPY&base=GBP")
+  //.then(response => response.json())
+  //.then(data => console.log(data)
+ // }
+ // )
 
  fetch("https://v6.exchangerate-api.com/v6/1e4be685bced6be0ff04f5fc/latest/GBP")
  .then(response => response.json())
