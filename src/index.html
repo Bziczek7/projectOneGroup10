@@ -31,13 +31,13 @@
                   Resources
                 </a>
                 <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Stock Headlines</a></li>
+                  <li><a class="dropdown-item" href="#cardNews1">Stock Headlines</a></li>
                 </ul>
               </li>
             </ul>
           
 
-              <a  class="nav-link highlight" href="#">Contact Us</a>
+              <a  class="nav-link highlight" href="#contactUs">Contact Us</a>
 
               
              </div> 
@@ -93,7 +93,7 @@
             <div class="col">col</div>
           </div> -->
           <div class="row">
-            <div class="col-12">col-8
+            <div class="col-12">
               <h1 class="display-4">Please choose currency</h1>
               <select class="form-select" aria-label="Default select example">
                 <option selected>Open this select menu</option>
@@ -125,12 +125,17 @@
                 </div>
               </div>
              
-           <div class="col-8 latestNews">
+           <div class="col-8">
               <div id = "nTitle" class=" newsTitle">
-                <h1>Top 3 Stock Headlines of the day</h1>
+                
+            <h1>Top 3 Stock Headlines of the day</h1>
               </div>
-            
-            
+                 <div class="latestNews">
+
+
+      
+              </div>
+           
               </div>
 
 
@@ -146,19 +151,45 @@
           </div>
         </div>
         
-<!-- Contact-->
+
    
 
 
         
       </main>
-<section class="contact-me">
+
+<!-- Contact-->
+
+<div class="container" id="contactUs">
+  <div style="text-align:center">
+    <h2>Contact Us</h2>
+    <p> Leave us a message:</p>
+  </div>
+  <div class="row">
+   
+    <div class="column">
+      <form action="/action_page.php">
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+        <label for="email">Email</label>
+            <input type="text" name="email" id="email" placeholder="janedoe@mail.com" />
+        <label for="subject">Subject</label>
+        <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
+        <input type="submit" value="Submit">
+      </form>
+    </div>
+  </div>
+</div>
+      
+<!-- <section class="contact-me">
   <h5 class= "contact-title"> Contact Us!</h5>
  <section class="contact-section">
  <div class="card" style="width: 18rem;">
   <div class="card-body">
     <h5 class="card-title"> Email</h5>
-    <a href="#" class="btn btn-primary">email@gmail.com</a>
+    <a href="https://mail.google.com/mail/u/0/#inbox?compose=CllgCJqZhkpLkbkRdQTlRjMKWMzMDStFsJJRnwNkdCDHLrFGtGSVDWNLqvBZcmQqPwGsstvRxgV" class="btn btn-primary">email@gmail.com</a>
   </div>
 </div>
 <div class="card" style="width: 18rem;">
@@ -168,7 +199,32 @@
   </div>
 </div>
  </section>
- </section>
+ </section> -->
+
+<!-- Icons -->
+<div class="socials">
+  <a href="https://en-gb.facebook.com/" target="_blank"
+    ><img
+      src="/images/icons/faceicon.png"
+      alt="Facebook"
+      loading="lazy"
+      class="socicon"
+  /></a>
+  <a href="https://www.instagram.com/" target="_blank"
+    ><img
+      src="/images/icons/instaincon.png"
+      alt="Instagram"
+      loading="lazy"
+      class="socicon"
+  /></a>
+ 
+  <a href="https://github.com/" target="_blank"
+    ><img src="/images/icons/githubicon.png" alt="Github" class="socicon"
+  /></a>
+
+
+</div>
+
 <!-- Footer -->
       <footer>
         <p class="copy">&copy; Copyright 2023</p>
@@ -179,9 +235,18 @@
     </footer>
 
 
+
+
+
+
+
     <script src="script.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
+
+
+
+
 </body>
 </html>
