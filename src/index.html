@@ -16,7 +16,7 @@
    
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
-        <a class="navbar-logo" href="#"><img src="/images/quick-convert-high-resolution-logo-color-on-transparent-background.png"></a>
+        <a class="navbar-logo" href="#"><img src="../images/quick-convert-high-resolution-logo-color-on-transparent-background.png"></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -93,6 +93,8 @@
             <div class="col">col</div>
           </div> -->
           <div class="row">
+            <div class="col-4">
+              <!-- <h1 class="display-6">Base Currency</h1> -->
             <div class="col-12">
               <h1 class="display-4">Please choose currency</h1>
               <select class="form-select" aria-label="Default select example">
@@ -110,18 +112,36 @@
               </select>
               <h1 class="display-4">Amount goes here:</h1>
               <div class="input-group mb-3">
-                <span class="input-group-text">$</span>
-                <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
-                <span class="input-group-text">.00</span>
-
-                
+                <span class="input-group-text" id="inputGroup-sizing-default">Base Currency</span>
+                <input type="text" class="form-control" id="firstCurr" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
               </div>
-              <input class="btn btn-primary" type="submit" value="Submit">
+              
+              <!-- <h1 class="display-4">Please choose 2nd currency</h1> -->
+              <div class="input-group mb-3">
+                <span class="input-group-text" id="inputGroup-sizing-default">Quote Currency</span>
+                <input type="text" class="form-control" id="secondCurr" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+              </div>
+              <!-- <h1 class="display-4">Amount goes here:</h1> -->
+              <div class="input-group mb-3">
+                <span class="input-group-text" id="inputGroup-sizing-default">Total</span>
+                <input type="text" class="form-control"  id="amountCurr" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+              </div>
+                
+              <input class="btn btn-primary" id="exchangeButton" type="submit" value="Submit">
+              <input class="btn btn-primary" id="historyButton" type="submit" value="History">
+              <input class="btn btn-primary" id="clearButton" type="submit" value="Clear">
             </div>
+            <div class="col-8">
 
               <div class="card">
                 <div class="card-body">
-                  This is some text within a card body. and changed fot test2
+                  <div> On the the right handside please type base currency, quite currency and the amount you'd like to exchange. 
+                  Please use international currency code for the input. If you'd like to see history of your querry please 
+                  click on "History" button.</div>
+                  <div id="displayCurrency">
+
+
+                  </div>
                 </div>
               </div>
              
