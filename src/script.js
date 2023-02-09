@@ -11,7 +11,7 @@ const divUpdate = document.getElementById("exchange-rate-update");
 //query selector to append news 
 const newsList = document.querySelector('.latestNews');
 function currencyNews() {
-  apiKey= `SexiEzek5JZbf96880n4vi1XNBe6EgfX9Uz2tz0i`;
+  apiKey= `pSrOG3QgreXMANhKGMHE3FxvRfIJ7zQqRIyYgORC`;
 
   fetch(`https://api.marketaux.com/v1/news/all?symbols=TSLA%2CAMZN%2CMSFT&filter_entities=true&language=en&api_token=${apiKey}`)
 .then((response) => {
