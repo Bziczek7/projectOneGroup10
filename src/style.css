@@ -83,8 +83,14 @@ body {
 
 .col-8 {
     align-content: center;
-    margin-left: 230px;
+    margin-left: 455px;
     margin-bottom: 100px;
+}
+
+#nTitle h1 {
+    display: flex;
+    flex-direction: row;
+    
 }
 
 .card {
@@ -170,33 +176,6 @@ body {
     }
   }
 
-/*.contact-title {
-    text-align: center;
-    margin-top: 50px;
-    
-} */
-
-/*.contact-me {
-        
-    background-position: center;
-    background-color:#4b859b;
-    background-repeat: no-repeat;
-    background-attachment: scroll;
-    background-size: cover;
-   
-  }
-  .contact-section {
-
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-left: 650px;
-    margin-right: 650px;
-    margin-top: 50px;
-  margin-bottom: 50px;
-    text-align: center;
-  
-  } */
 
 /* Footer */
 footer {
