@@ -24,7 +24,7 @@
              <div class="navbar-nav" > 
 
               <a  class="nav-link active highlight"  aria-current="page" href="#">Home</a>
-              <a  class="nav-link highlight" href="#">Converter</a>
+              <a  class="nav-link highlight" href="#currency">Converter</a>
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle highlight" href="#" role="button" data-bs-toggle="dropdown" href="#" aria-expanded="false">
 
@@ -35,6 +35,8 @@
                 </ul>
               </li>
             </ul>
+
+            <a  class="nav-link highlight" href="#popularCurrency">Popular Currency</a>
           
 
               <a  class="nav-link highlight" href="#contactUs">Contact Us</a>
@@ -95,7 +97,7 @@
           <div class="row">
             <div class="col-4">
               <!-- <h1 class="display-6">Base Currency</h1> -->
-            <div class="col-12">
+            <div class="col-12" id="currency">
               <h1 class="display-4">Please choose currency</h1>
               <select class="form-select" aria-label="Default select example">
                 <option selected>Open this select menu</option>
@@ -133,7 +135,7 @@
             </div>
             <div class="col-8">
 
-              <div class="card">
+              <div id="currencyCard" class="card" >
                 <div class="card-body">
                   <div> On the the right handside please type base currency, quite currency and the amount you'd like to exchange. 
                   Please use international currency code for the input. If you'd like to see history of your querry please 
@@ -144,12 +146,12 @@
                   </div>
                 </div>
               </div>
-             
-           <div class="col-8">
-              <div id = "nTitle" class=" newsTitle">
+              <div id = "nTitle" class= "newsTitle">
                 
             <h1>Top 3 Stock Headlines of the day</h1>
               </div>
+           <div class="col-8">
+             
                  <div class="latestNews">
 
 
