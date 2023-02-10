@@ -39,16 +39,17 @@ URL: https://github.com/Bziczek7/projectOneGroup10
 
 ## Usage
 
-Page comprised of 4 main sections:
+Page comprised of 5 main sections:
 
 1. Navigation bar linking to main sections of the site.
 2. A "Popular Currencies" section for UK travellers showing 3 exchange rates of 3 common currencies against a base GBP rate - this pulls from an API which refreshes daily.
 3. A "Currency Conversion" section which allows users to input a base currency, an amount and will return the amount of currency they wish to convert to.  This uses an event listener and an API.
 4. A news section for top news stories which fetches the top 3 financial news stories from an API.
+5. A "contact us" form.
 
 See screenshot below:
 
-![My Image](../images/screenshot.png)
+![My Image](./images/Screenshot.png)
 
 ## Credits
 
